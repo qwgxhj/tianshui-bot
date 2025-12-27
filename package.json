@@ -1,0 +1,28 @@
+{
+  "name": "tianshui-bot",
+  "version": "1.0.0",
+  "description": "基于NapCat的插件化QQ机器人，支持JS插件热插拔，生态可扩展",
+  "main": "core/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node core/main.js",
+    "dev": "node --watch core/main.js",
+    "pm2:start": "pm2 start core/main.js --name tianshui-bot",
+    "pm2:logs": "pm2 logs tianshui-bot",
+    "pm2:restart": "pm2 restart tianshui-bot"
+  },
+  "keywords": ["NapCat", "QQBot", "OneBot", "tianshui-bot", "插件化"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "ws": "^8.18.0",
+    "winston": "^3.14.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
