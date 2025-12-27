@@ -1,0 +1,13 @@
+# 依赖目录
+node_modules/
+# 环境变量
+.env
+# 日志文件
+*.log
+# 临时文件
+tmp/
+# 编辑器缓存
+.vscode/
+.idea/
+# PM2进程文件
+pm2.log
